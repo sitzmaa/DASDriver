@@ -1,0 +1,77 @@
+;
+; das1.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sensor ; 
+ClassGuid={5175d334-c371-4806-b3ba-71fd53c9258d} ; 
+Provider=%ManufacturerName%
+CatalogFile=das1.cat
+DriverVer=03/13/2024,1.0.0.0 ; TODO: set DriverVer in stampinf property pages
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+das1_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+das1.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%das1.DeviceDesc%=das1_Device, PCI\VEN_1307&DEV_0029&SUBSYS_00291307&REV_02 ; TODO: edit hw-id
+
+[das1_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+das1.sys
+
+;-------------- Service installation
+[das1_Device.NT.Services]
+AddService = das1,%SPSVCINST_ASSOCSERVICE%, das1_Service_Inst
+
+; -------------- das1 driver install sections
+[das1_Service_Inst]
+DisplayName    = %das1.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\das1.sys
+
+;
+;--- das1_Device Coinstaller installation ------
+;
+
+[das1_Device.NT.CoInstallers]
+AddReg=das1_Device_CoInstaller_AddReg
+CopyFiles=das1_Device_CoInstaller_CopyFiles
+
+[das1_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[das1_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[das1_Device.NT.Wdf]
+KmdfService =  das1, das1_wdfsect
+[das1_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="csci-513" ;
+DiskName = "das1 Installation Disk"
+das1.DeviceDesc = "das1 Device"
+das1.SVCDESC = "das1 Service"

@@ -1,0 +1,199 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+[     1.000000]     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+[     1.000000]     2018, 2019, 2020, 2021, 2022
+[     1.000000]     The NetBSD Foundation, Inc.  All rights reserved.
+[     1.000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
+[     1.000000]     The Regents of the University of California.  All rights reserved.
+
+[     1.000000] NetBSD 9.3 (MYKERN) #3: Tue Jan 30 21:00:38 PST 2024
+[     1.000000] 	alex@NBdriver:/usr/src/sys/arch/amd64/compile/MYKERN
+[     1.000000] total memory = 2047 MB
+[     1.000000] avail memory = 1964 MB
+[     1.000000] cpu_rng: RDSEED
+[     1.000000] rnd: seeded with 256 bits
+[     1.000000] timecounter: Timecounters tick every 10.000 msec
+[     1.000000] Kernelized RAIDframe activated
+[     1.000000] running cgd selftest aes-xts-256 aes-xts-512 done
+[     1.000000] timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+[     1.000003] QEMU Standard PC (i440FX + PIIX, 1996) (pc-i440fx-7.2)
+[     1.000003] mainbus0 (root)
+[     1.000003] ACPI: RSDP 0x00000000000F5A90 000014 (v00 BOCHS )
+[     1.000003] ACPI: RSDT 0x000000007FFE184B 000030 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[     1.000003] ACPI: FACP 0x000000007FFE16FF 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[     1.000003] ACPI: DSDT 0x000000007FFDFCC0 001A3F (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[     1.000003] ACPI: FACS 0x000000007FFDFC80 000040
+[     1.000003] ACPI: APIC 0x000000007FFE1773 0000B0 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[     1.000003] ACPI: WAET 0x000000007FFE1823 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[     1.000003] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[     1.000003] ioapic0 at mainbus0 apid 0: pa 0xfec00000, version 0x11, 24 pins
+[     1.000003] cpu0 at mainbus0 apid 0
+[     1.000003] cpu0: 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz, id 0xa0671
+[     1.000003] cpu0: package 0, core 0, smt 0
+[     1.000003] cpu1 at mainbus0 apid 1
+[     1.000003] cpu1: 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz, id 0xa0671
+[     1.000003] cpu1: package 1, core 0, smt 0
+[     1.000003] cpu2 at mainbus0 apid 2
+[     1.000003] cpu2: 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz, id 0xa0671
+[     1.000003] cpu2: package 2, core 0, smt 0
+[     1.000003] cpu3 at mainbus0 apid 3
+[     1.000003] cpu3: 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz, id 0xa0671
+[     1.000003] cpu3: package 3, core 0, smt 0
+[     1.000003] cpu4 at mainbus0 apid 4
+[     1.000003] cpu4: 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz, id 0xa0671
+[     1.000003] cpu4: package 4, core 0, smt 0
+[     1.000003] cpu5 at mainbus0 apid 5
+[     1.000003] cpu5: 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz, id 0xa0671
+[     1.000003] cpu5: package 5, core 0, smt 0
+[     1.000003] cpu6 at mainbus0 apid 6
+[     1.000003] cpu6: 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz, id 0xa0671
+[     1.000003] cpu6: package 6, core 0, smt 0
+[     1.000003] cpu7 at mainbus0 apid 7
+[     1.000003] cpu7: 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz, id 0xa0671
+[     1.000003] cpu7: package 7, core 0, smt 0
+[     1.000003] acpi0 at mainbus0: Intel ACPICA 20190405
+[     1.000003] acpi0: X/RSDT: OemId <BOCHS ,BXPC    ,00000001>, AslId <BXPC,00000001>
+[     1.000003] LNKS: ACPI: Found matching pin for 0.1.INTA at func 3: 9
+[     1.000003] LNKB: ACPI: Found matching pin for 0.2.INTA at func 0: 10
+[     1.000003] LNKC: ACPI: Found matching pin for 0.3.INTA at func 0: 11
+[     1.000003] LNKD: ACPI: Found matching pin for 0.4.INTA at func 0: 11
+[     1.000003] LNKA: ACPI: Found matching pin for 0.5.INTA at func 0: 10
+[     1.000003] LNKB: ACPI: Found matching pin for 0.5.INTB at func 1: 10
+[     1.000003] LNKC: ACPI: Found matching pin for 0.5.INTC at func 2: 11
+[     1.000003] LNKD: ACPI: Found matching pin for 0.5.INTD at func 7: 11
+[     1.000003] LNKB: ACPI: Found matching pin for 0.6.INTA at func 0: 10
+[     1.000003] LNKC: ACPI: Found matching pin for 0.7.INTA at func 0: 11
+[     1.000003] acpi0: SCI interrupting at int 9
+[     1.000003] acpi0: fixed power button present
+[     1.000003] timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
+[     1.042318] qemufwcfg0 at acpi0 (FWCF, QEMU0002): io 0x510-0x51b
+[     1.042318] qemufwcfg0: <QEMU>
+[     1.042318] COM1 (PNP0501) at acpi0 not configured
+[     1.042318] pckbc1 at acpi0 (KBD, PNP0303) (kbd port): io 0x60,0x64 irq 1
+[     1.042318] pckbc2 at acpi0 (MOU, PNP0F13) (aux port): irq 12
+[     1.042318] FDC0 (PNP0700) at acpi0 not configured
+[     1.042318] ACPI: Enabled 2 GPEs in block 00 to 0F
+[     1.042318] pckbd0 at pckbc1 (kbd slot)
+[     1.042318] pckbc1: using irq 1 for kbd slot
+[     1.042318] wskbd0 at pckbd0: console keyboard
+[     1.042318] pms0 at pckbc1 (aux slot)
+[     1.042318] pckbc1: using irq 12 for aux slot
+[     1.042318] wsmouse0 at pms0 mux 0
+[     1.042318] pci0 at mainbus0 bus 0: configuration mode 1
+[     1.042318] pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+[     1.042318] pchb0 at pci0 dev 0 function 0: vendor 8086 product 1237 (rev. 0x02)
+[     1.042318] pcib0 at pci0 dev 1 function 0: vendor 8086 product 7000 (rev. 0x00)
+[     1.042318] piixide0 at pci0 dev 1 function 1: Intel 82371SB IDE Interface (PIIX3) (rev. 0x00)
+[     1.042318] piixide0: bus-master DMA support present
+[     1.042318] piixide0: primary channel wired to compatibility mode
+[     1.042318] piixide0: primary channel interrupting at ioapic0 pin 14
+[     1.042318] atabus0 at piixide0 channel 0
+[     1.042318] piixide0: secondary channel wired to compatibility mode
+[     1.042318] piixide0: secondary channel interrupting at ioapic0 pin 15
+[     1.042318] atabus1 at piixide0 channel 1
+[     1.042318] piixpm0 at pci0 dev 1 function 3: vendor 8086 product 7113 (rev. 0x03)
+[     1.042318] timecounter: Timecounter "piixpm0" frequency 3579545 Hz quality 1000
+[     1.761285] piixpm0: 24-bit timer
+[     1.761285] piixpm0: interrupting at ioapic0 pin 9
+[     1.761285] iic0 at piixpm0 port 0: I2C bus
+[     1.761285] vga0 at pci0 dev 2 function 0: vendor 1b36 product 0100 (rev. 0x05)
+[     1.761285] wsdisplay0 at vga0 kbdmux 1: console (80x25, vt100 emulation), using wskbd0
+[     1.761285] wsmux1: connecting to wsdisplay0
+[     1.761285] drm at vga0 not configured
+[     1.761285] wm0 at pci0 dev 3 function 0, 64-bit DMA: Intel i82540EM 1000BASE-T Ethernet (rev. 0x03)
+[     1.761285] wm0: interrupting at ioapic0 pin 11
+[     1.761285] wm0: 32-bit 33MHz PCI bus
+[     1.761285] wm0: 64 words (6 address bits) MicroWire EEPROM
+[     1.761285] wm0: Ethernet address 52:54:00:a1:49:94
+[     1.761285] wm0: 0x200002<LOCK_EECD,WOL>
+[     1.761285] makphy0 at wm0 phy 1: Marvell 88E1011 Gigabit PHY, rev. 0
+[     1.761285] makphy0: Failed to access EADR. Are you an emulator?
+[     1.761285] makphy0: Failed to read EXTSR. Are you an emulator?. Regard as 1000BASE-T.
+[     1.761285] makphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+[     1.761285] hdaudio0 at pci0 dev 4 function 0: HD Audio Controller
+[     1.761285] hdaudio0: interrupting at msi0 vec 0
+[     1.761285] hdafg0 at hdaudio0: vendor 1af4 product 0022
+[     1.761285] hdafg0: DAC00 2ch: Speaker [Jack]
+[     1.761285] hdafg0: ADC01 2ch: Line In [Jack]
+[     1.761285] hdafg0: 2ch/2ch 16000Hz 22050Hz 32000Hz 44100Hz 48000Hz 88200Hz 96000Hz PCM16
+[     1.761285] audio0 at hdafg0: playback, capture, full duplex, independent
+[     1.761285] audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+[     1.761285] audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+[     1.761285] spkr0 at audio0: PC Speaker (synthesized)
+[     1.761285] wsbell at spkr0 not configured
+[     1.761285] uhci0 at pci0 dev 5 function 0: vendor 8086 product 2934 (rev. 0x03)
+[     1.761285] uhci0: interrupting at ioapic0 pin 10
+[     1.761285] usb0 at uhci0: USB revision 1.0
+[     1.761285] uhci1 at pci0 dev 5 function 1: vendor 8086 product 2935 (rev. 0x03)
+[     1.761285] uhci1: interrupting at ioapic0 pin 10
+[     1.761285] usb1 at uhci1: USB revision 1.0
+[     1.761285] uhci2 at pci0 dev 5 function 2: vendor 8086 product 2936 (rev. 0x03)
+[     1.761285] uhci2: interrupting at ioapic0 pin 11
+[     1.761285] usb2 at uhci2: USB revision 1.0
+[     1.761285] ehci0 at pci0 dev 5 function 7: vendor 8086 product 293a (rev. 0x03)
+[     1.761285] ehci0: interrupting at ioapic0 pin 11
+[     1.761285] ehci0: EHCI version 1.0
+[     1.761285] ehci0: 3 companion controllers, 2 ports each: uhci0 uhci1 uhci2
+[     1.761285] usb3 at ehci0: USB revision 2.0
+[     1.761285] virtio0 at pci0 dev 6 function 0
+[     1.761285] virtio0: Virtio Console Device (rev. 0x00)
+[     1.761285] virtio0: autoconfiguration error: no matching child driver; not configured
+[     1.761285] virtio1 at pci0 dev 7 function 0
+[     1.761285] virtio1: Virtio Memory Balloon Device (rev. 0x00)
+[     1.761285] viomb0 at virtio1virtio1: allocated 8192 byte for virtqueue 0 for inflate, size 128
+[     1.761285] virtio1: allocated 8192 byte for virtqueue 1 for deflate, size 128
+[     1.761285] : Features: 0x10000000<INDIRECT_DESC>
+[     1.761285] virtio1: interrupting at ioapic0 pin 11
+[     1.761285] isa0 at pcib0
+[     1.761285] com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, working fifo
+[     1.761285] attimer0 at isa0 port 0x40-0x43
+[     1.761285] pcppi0 at isa0 port 0x61
+[     1.761285] spkr1 at pcppi0: PC Speaker
+[     1.761285] wsbell at spkr1 not configured
+[     1.761285] midi0 at pcppi0: PC speaker
+[     1.761285] sysbeep0 at pcppi0
+[     1.761285] fdc0 at isa0 port 0x3f0-0x3f7 irq 6 drq 2
+[     1.761285] attimer0: attached to pcppi0
+[     1.761285] acpicpu0 at cpu0: ACPI CPU
+[     1.761285] acpicpu0: C1: HLT, lat   0 us, pow     0 mW
+[     1.761285] acpicpu1 at cpu1: ACPI CPU
+[     1.761285] acpicpu2 at cpu2: ACPI CPU
+[     1.761285] acpicpu3 at cpu3: ACPI CPU
+[     1.761285] acpicpu4 at cpu4: ACPI CPU
+[     1.761285] acpicpu5 at cpu5: ACPI CPU
+[     1.761285] acpicpu6 at cpu6: ACPI CPU
+[     1.761285] acpicpu7 at cpu7: ACPI CPU
+[     1.761285] timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+[     2.548377] atapibus0 at atabus0: 2 targets
+[     2.558396] cd0 at atapibus0 drive 1: <QEMU DVD-ROM, QM00002, 2.5+> cdrom removable
+[     2.558396] cd0: 32-bit data port
+[     2.558396] cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+[     2.558396] wd0 at atabus0 drive 0
+[     2.558396] wd0: <QEMU HARDDISK>
+[     2.558396] wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+[     2.558396] wd0: 30720 MB, 62415 cyl, 16 head, 63 sec, 512 bytes/sect x 62914560 sectors
+[     2.558396] wd0: 32-bit data port
+[     2.558396] wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+[     2.558396] wd0(piixide0:0:0): using PIO mode 4, DMA mode 2 (using DMA)
+[     2.558396] cd0(piixide0:0:1): using PIO mode 4, DMA mode 2 (using DMA)
+[     2.558396] IPsec: Initialized Security Association Processing.
+[     2.568387] uhub0 at usb0: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[     2.568387] uhub0: 2 ports with 2 removable, self powered
+[     2.568387] uhub1 at usb3: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+[     2.568387] uhub1: 6 ports with 6 removable, self powered
+[     2.568387] uhub2 at usb2: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[     2.568387] uhub2: 2 ports with 2 removable, self powered
+[     2.568387] uhub3 at usb1: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[     2.568387] uhub3: 2 ports with 2 removable, self powered
+[     4.879303] uhidev0 at uhub1 port 1 configuration 1 interface 0
+[     4.889230] uhidev0: QEMU (0x627) QEMU USB Tablet (0x01), rev 2.00/0.00, addr 2, iclass 3/0
+[     4.899356] ums0 at uhidev0: 3 buttons and Z dir
+[     4.899356] wsmouse1 at ums0 mux 0
+[     4.899356] WARNING: 1 error while detecting hardware; check system log.
+[     4.911098] boot device: wd0
+[     4.911098] root on wd0a dumps on wd0b
+[     4.911098] root file system type: ffs
+[     4.920074] kern.module.path=/stand/amd64/9.3/modules
+[    13.732298] wsdisplay0: screen 1 added (80x25, vt100 emulation)
+[    13.732298] wsdisplay0: screen 2 added (80x25, vt100 emulation)
+[    13.732298] wsdisplay0: screen 3 added (80x25, vt100 emulation)
+[    13.732298] wsdisplay0: screen 4 added (80x25, vt100 emulation)

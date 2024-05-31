@@ -1,0 +1,11 @@
+--- /usr/src/sys/arch/amd64/conf/MYKERN	2024-01-30 20:23:54.598900418 -0800
++++ /usr/src/sys/arch/amd64/conf/MYKERN.orig	2024-01-23 19:10:32.762655030 -0800
+@@ -842,7 +842,7 @@
+ xirc*	at pcmcia? function ?		# Xircom CreditCard Ethernet
+ com*	at xirc?
+ xi*	at xirc?
+-toy* 	at isa?
++
+ mhzc*	at pcmcia? function ?		# Megahertz Ethernet/Modem combo cards
+ com*	at mhzc?
+ sm*	at mhzc?
